@@ -12,6 +12,11 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+testCompile group: 'junit', name: 'junit', version: '4.12'
+//need to install the lombok idea plugin to make it work
+providedCompile group: 'org.projectlombok', name: 'lombok', version: '1.18.8'
+
+
     }
 }
 
